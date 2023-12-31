@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.step {
+    margin-bottom: 20px;
+}
+.step1{
+    margin-left: 100px;
+    margin-top: -35px;
+    margin-bottom: 215px;
+}
+.step2{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.column {
+    float: left;
+    width: 48%;
+    padding: 10px 10px;
+  }
+  
+  .row {
+    margin-left:20px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    padding: 16px;
+    background-color: #FFFEFE;
+  }
+
+  h3{
+    margin: 30px;
+  }
+.step-header {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    
+}
+
+.fields-selection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fields-buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: white;
+    color: gray;
+    border: none;
+    cursor: pointer;
+    border: 2px solid lightgray;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#cancelButton {
+    background-color: white;
+    color: red;
+}
+
+#nextButton {
+    background-color: green;
+    color: white;
+}
+
+select[multiple] {
+    height: auto;
+    min-height: 120px;
+}
+
+
+#data-preview {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#data-preview th,
+#data-preview td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#data-preview th {
+  background-color: #f2f2f2;
+}
+.step-headerr {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.stepp {
+    margin-bottom: 20px;
+}
+.columnn {
+    float: left;
+    width: 98%;
+    padding: 10px 10px;
+  }
+.btn{
+    align-items: right;
+}

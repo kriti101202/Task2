@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3>Import Products</h3>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                        <div>
+                            <div class="step-header"><b>Step 1:</b></div>
+                        </div>
+                        <div class="step1">
+                            <p>Select File</p>
+                            <input type="file" id="fileUpload" accept=".json,.csv" />
+                            <p>Supported File Type(s): .CSV, .JSON</p>
+                        </div>
+                </div>
+            </div>
+        <div class="column">
+            <div class="card">
+                    <div class="step">
+                        <div class="step-header"><b>Step 2:</b></div>
+                    </div>
+
+                        <div class="step2">
+                            <p>Specify Format</p>
+                        <label for="fileType">File Type</label>
+                        <select id="fileType">
+                        <option value="csv">csv</option>
+                        <option value="json">JSON</option>
+                        </select>
+                        <label for="encoding">Character Encoding</label>
+                        <select id="encoding">
+                        <option value="utf8">UTF-8</option>
+                        </select>
+                        <label for="delimiter">Delimiter</label>
+                        <select id="delimiter">
+                        <option value=",">comma</option>
+                        </select>
+                        <label>
+                        <input type="checkbox" id="hasHeader" checked>
+                        Has Header
+                        </label>
+                       </div>
+                        </div>
+                </div>
+            </div>
+    </div>
+    <div class="row">
+        <div class="columnn">
+            <div class="card">
+    <div class="stepp">
+        <div class="step-headerr"><b>Step 3: Display Handling</b></div>
+        <p>Select the fields to be displayed</p>
+        <div class="fields-selection">
+            <div>
+                <label>Available Fields</label>
+                <select id="availableFields" multiple size="8">
+                </select>
+            </div>
+            <div class="fields-buttons">
+                <button type="button" id="addField">>></button>
+                <button type="button" id="removeField">
+                    << </button>
+            </div>
+            <div>
+                <label>Fields to be Displayed</label>
+                <select id="displayFields" multiple size="8">
+                </select>
+            </div>
+        </div>
+    </div>
+    
+</div>
+</div>
+</div>
+</div>
+<div class="btn">
+<button type="button" id="nextButton">Next</button>
+<button type="button" id="cancelButton">Cancel</button>
+</div>
+<div class="import-step">
+    <table id="data-preview">
+        <thead>
+            <tr>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
